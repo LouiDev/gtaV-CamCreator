@@ -17,7 +17,7 @@ This code can then be directly integrated into your own mods.
 - Export directly as **ready-to-use C# code**.
 
 ## Installation
-1. Download the latest [release](https://github.com/yourname/gta-v-freecam-tool/releases).
+1. Download the latest [release](https://www.gta5-mods.com/tools/camcreator-open-source).
 2. Follow included installation instructions.
 3. Activate the tool with the defined hotkey.
 
