@@ -20,7 +20,6 @@ namespace CamCreator
             _script = script;
             _settings = new CamSettings(_script.Settings);
             _showHud = true;
-            InitScaleform();
         }
 
         public bool IsActive
@@ -132,7 +131,11 @@ namespace CamCreator
             var controls = _settings.ControlsProvider;
 
             if (Game.IsControlJustReleased(controls.ToggleCam))
+            {
+                if (_scaleform == null)
+                    InitScaleform();
                 IsActive = !IsActive;
+            }
 
             if (!IsActive) 
                 return;
