@@ -8,7 +8,7 @@ namespace CamCreator
             => LoadSettings(settings);
 
         public float DefaultSpeed { get; private set; } = 0.5f;
-        public float DefaultSpeedMultiplier { get; private set; } = 3f;
+        public float DefaultSprintMultiplier { get; private set; } = 3f;
         public int DefaultFov { get; private set; } = 65;
         public ControlsProvider ControlsProvider { get; private set; }
 
@@ -18,8 +18,8 @@ namespace CamCreator
             
             if (settings.TryGetValue("DefaultValues", "Speed", out float defaultSpeed))
                 DefaultSpeed = defaultSpeed;
-            if (settings.TryGetValue("DefaultValues", "SpeedMultiplier", out float defaultSpeedMultiplier))
-                DefaultSpeedMultiplier = defaultSpeedMultiplier;
+            if (settings.TryGetValue("DefaultValues", "SprintMultiplier", out float defaultSpeedMultiplier))
+                DefaultSprintMultiplier = defaultSpeedMultiplier;
             if (settings.TryGetValue("DefaultValues", "Fov", out int defaultFOV))
                 DefaultFov = defaultFOV;
         }

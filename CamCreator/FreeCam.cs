@@ -79,7 +79,10 @@ namespace CamCreator
         private void EnableOrCreateCam()
         {
             if (_cam == null)
+            {
                 _cam = Camera.Create(ScriptedCameraNameHash.DefaultScriptedCamera, DefaultPosition, Vector3.Zero);
+                _cam.FieldOfView = _settings.DefaultFov;
+            }
 
             _cam.IsActive = true;
             ScriptCameraDirector.StartRendering();
@@ -146,8 +149,8 @@ namespace CamCreator
 
             #region Movement
             var position = _cam.Position;
-            var sprintMultiplier = Game.IsControlPressed(controls.Sprint) ? 3f : 1f;
-            var speed = 0.5f;
+            var sprintMultiplier = Game.IsControlPressed(controls.Sprint) ? _settings.DefaultSprintMultiplier : 1f;
+            var speed = _settings.DefaultSpeed;
             var upDownDirection = Game.GetDisabledControlValueNormalized(controls.MoveUpDown);
             var leftRightDirection = Game.GetDisabledControlValueNormalized(controls.MoveLeftRight);
 
