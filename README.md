@@ -33,7 +33,7 @@ This code can then be directly integrated into your own mods.
 - [ScriptHookVDotNet nightly](https://github.com/scripthookvdotnet/scripthookvdotnet-nightly/releases) v45 (!) or higher
 
 ## Contact me
-If you have questions, feedback or suggestions, hit me up on [Discord](href="https://discord.gg/U2KGVbj3uh). 
+If you have questions, feedback or suggestions, hit me up on [Discord](https://discord.gg/U2KGVbj3uh). 
 This is the fastest way to get a response.
 
 ## License
